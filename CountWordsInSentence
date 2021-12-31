@@ -1,0 +1,4 @@
+public int getNumWords(String s) {
+        String[] arr = s.split(" ");
+        return (arr.length);
+}
