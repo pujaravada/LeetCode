@@ -1,0 +1,16 @@
+class MaxNumberOfWordsInASentence {
+    public int mostWordsFound(String[] sentences) {
+        
+        int max = -1;
+        for (String s: sentences) {
+            max = Math.max(getNumWords(s), max);
+        }
+        return max;
+    }
+    // Helper. Split by space, then return length of result.
+    public int getNumWords(String s) {
+        String[] arr = s.split(" ");
+        return (arr.length);
+    }
+
+}
