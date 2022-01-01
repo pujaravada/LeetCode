@@ -1,0 +1,9 @@
+Char equality check
+
+for(char c: stonesChar) {
+  for(char jewel: jewelsChar) {
+      if(jewel == c) {
+          count++;
+      }
+  }
+}
