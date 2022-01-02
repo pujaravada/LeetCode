@@ -1,0 +1,22 @@
+class Solution {
+    public int numJewelsInStones(String jewels, String stones) {
+        
+        int count = 0;
+
+        char[] stonesChar = stones.toCharArray();
+        char[] jewelsChar = jewels.toCharArray();
+        
+        for(char c: stonesChar) {
+            for(char jewel: jewelsChar) {
+                if(jewel == c) {
+                    count++;
+                }
+            }
+        }
+        
+        return count;
+        
+        
+        
+    }
+}
